@@ -6,6 +6,6 @@ class NestedTreeBuilder
   end
 
   def build_tree
-    flat_list.map {|item| { title: item } }
+    flat_list.sort.map {|item| { title: item } }
   end
 end
